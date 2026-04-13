@@ -144,7 +144,7 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    global global_memory, banned_slots, is_awake, last_activity_time
+    global global_memory, banned_slots, is_awake, last_activity_time, current_thinking_mode
     if message.author.bot:
         return
     last_activity_time = datetime.datetime.now()
