@@ -1,0 +1,32 @@
+# Environment & Secrets
+.env
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+venv/
+.venv/
+
+# Project-specific private config (L.S.D. instance)
+config/agents.yaml
+config/schedules.yaml
+
+# Runtime data
+global_memory.json
+chroma_memory/
+evaluation_data/
+reports/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup files
+*.bak

@@ -1,0 +1,35 @@
+# ============================================================
+# Tochikoma Parallel System — Schedule Configuration (Template)
+# ============================================================
+# Copy this file to schedules.yaml and customize.
+# ============================================================
+
+timezone: "Asia/Tokyo"
+
+# Autonomous triggers
+triggers:
+  morning:
+    hour: 4
+    minute: 0
+    query: |
+      [Morning autonomous trigger] Master A, conduct today's initial briefing. Use web search if available.
+
+  noon:
+    hour: 13
+    minute: 0
+    query: |
+      [Noon autonomous trigger] Worker B, inject lateral thinking disruption based on current system state using web noise.
+
+  night:
+    hour: 22
+    minute: 0
+    query: |
+      [Night autonomous trigger] Auditor E, audit today's thinking processes against web-sourced facts.
+
+# REM sleep batch (memory consolidation)
+rem_sleep:
+  hour: 0
+  minute: 0
+
+# Sleep detection (seconds of inactivity)
+sleep_timeout_seconds: 300
